@@ -2,12 +2,11 @@ import {
   SafeAreaView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
 } from 'react-native';
 import React from 'react';
-import {Section} from './components/section';
-import {Header} from './components/header';
+import {Section} from '@app/components/section';
+import {Header} from '@app/components/header';
 
 export default function App() {
   const isDarkMode = useColorScheme() === 'dark';

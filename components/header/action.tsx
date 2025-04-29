@@ -1,14 +1,32 @@
 import {StyleSheet, Text, View} from 'react-native';
-import More from '../../assets/more.svg';
+import MoreIcon from '../../assets/more.svg';
+import PhotoIcon from '../../assets/photo.svg';
+import PlusIcon from '../../assets/plus.svg';
 const Action = () => {
   return (
-    <View>
-      <Text>Action</Text>
-      <More width={20} height={20} />
+    <View style={styles.container}>
+      <MoreIcon width={28} height={28} />
+      <View style={styles.lefContainer}>
+        <PhotoIcon width={28} height={28} />
+        <PlusIcon width={28} height={28} />
+      </View>
     </View>
   );
 };
 
 export default Action;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 15,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  lefContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    gap: 15,
+  },
+});

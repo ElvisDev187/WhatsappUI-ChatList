@@ -7,6 +7,8 @@ import {
 import React from 'react';
 import {Section} from '@app/components/section';
 import {Header} from '@app/components/header';
+import Separator from './components/separator';
+import Archives from './components/archive';
 
 export default function App() {
   const isDarkMode = useColorScheme() === 'dark';
@@ -19,6 +21,8 @@ export default function App() {
 
       <Section>
         <Header />
+        <Archives />
+        <Separator />
       </Section>
     </SafeAreaView>
   );

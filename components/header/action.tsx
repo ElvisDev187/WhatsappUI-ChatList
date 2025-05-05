@@ -5,7 +5,10 @@ import PlusIcon from '../../assets/plus.svg';
 const Action = () => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          console.log('More icon pressed');
+        }}>
         <MoreIcon width={28} height={28} />
       </TouchableOpacity>
       <View style={styles.lefContainer}>
